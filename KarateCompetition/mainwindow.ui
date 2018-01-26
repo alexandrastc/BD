@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>656</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>4</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QTableView" name="tablePersons"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_4">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QTableView" name="tableOrganization"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_6">
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QTableView" name="tableAge"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QTableView" name="tableWorkingHours"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_5">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QTableView" name="tableChampionship"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QTableView" name="tableWorkingHoursJoinPersons"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>656</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionAdd_Item"/>
+    <addaction name="actionAdd_Organization"/>
+    <addaction name="actionAdd_Championship"/>
+    <addaction name="actionAdd_Age_Category"/>
+    <addaction name="actionAdd_Weight_Category"/>
+    <addaction name="actionAdd_Experience_Category"/>
+   </widget>
+   <widget class="QMenu" name="menuDatabase">
+    <property name="title">
+     <string>Database</string>
+    </property>
+    <addaction name="actionRefresh"/>
+   </widget>
+   <widget class="QMenu" name="menuTables">
+    <property name="title">
+     <string>Tables</string>
+    </property>
+    <addaction name="actionTables"/>
+    <addaction name="actionOrganizations"/>
+    <addaction name="actionJoin_Table"/>
+    <addaction name="actionChampionship"/>
+    <addaction name="actionAge"/>
+    <addaction name="actionWeight"/>
+    <addaction name="actionExperience"/>
+   </widget>
+   <addaction name="menuEdit"/>
+   <addaction name="menuDatabase"/>
+   <addaction name="menuTables"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAdd_Item">
+   <property name="text">
+    <string>Add Person</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </action>
+  <action name="actionTables">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Participants</string>
+   </property>
+  </action>
+  <action name="actionOrganizations">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Orgsnization</string>
+   </property>
+  </action>
+  <action name="actionAdd_Organization">
+   <property name="text">
+    <string>Add Organization</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Organization</string>
+   </property>
+  </action>
+  <action name="actionJoin_Table">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Join Table</string>
+   </property>
+  </action>
+  <action name="actionChampionship">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Championship</string>
+   </property>
+  </action>
+  <action name="actionAdd_Championship">
+   <property name="text">
+    <string>Add Championship</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Championship</string>
+   </property>
+  </action>
+  <action name="actionAdd_Age_Category">
+   <property name="text">
+    <string>Add Age Category</string>
+   </property>
+  </action>
+  <action name="actionAdd_Weight_Category">
+   <property name="text">
+    <string>Add Weight Category</string>
+   </property>
+  </action>
+  <action name="actionAdd_Experience_Category">
+   <property name="text">
+    <string>Add Experience Category</string>
+   </property>
+  </action>
+  <action name="actionAge">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Age</string>
+   </property>
+  </action>
+  <action name="actionWeight">
+   <property name="text">
+    <string>Weight</string>
+   </property>
+  </action>
+  <action name="actionExperience">
+   <property name="text">
+    <string>Experience</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
